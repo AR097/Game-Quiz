@@ -1,0 +1,141 @@
+/* Projeto desenvolvido com BASE em videos do canal de youtube THE TECH MACHINE, com titulo do video "Quiz Game Using C Programming"*/
+
+#include <stdio.h>
+int main ()
+
+{
+    int i;
+    int ans1,ans2,ans3,ans4;
+    int point1,point2,point3,point4;
+    int point01, point02,point03, point04;
+    int total1,total2,total3,total4;
+
+    printf("Bem vindo ao jogo!\n\n");
+
+    printf("> Pressicione o numero 7, e depois enter para iniciar o jogo\n");
+    printf("> Pressione o numero 0, e depois enter para encerrar o jogo.\n");
+
+    scanf("%d", &i);
+
+    if (i==7)
+    {
+       printf("O jogo irá começar!\n\n");
+    }
+
+    else if (i==0)
+    {
+        printf("O jogo foi encerrado.\n\n");
+    }
+
+    else
+    {
+        printf("Comando inválido!\n\n");
+    }
+    
+    if (i==7)
+    {
+        /* Pergunta 01*/
+        printf("1) Qual a cor do sol?\n\n");
+        
+        printf("1) Tons de amarelo\n");
+        printf("2) Tons de preto\n");
+        printf("3) É Branco\n");
+        printf("4) Tons de azul\n");
+        
+        printf("Enter your answer:  ");
+        scanf("%d", &ans1);
+        
+        
+        if(ans1==1)
+        {
+            printf("Resposta correta\n");
+            point1 = 5;
+            printf("Você tem uma Score de %d pontos\n", point1);
+        }
+        
+        else
+        {
+            printf("Resposta errada\n");
+            point01 = 0;
+            printf("Você tem uma Score de %d pontos\n", point01);
+        }
+        
+        /* Pergunta 02 */
+        printf("2) Qual a cor da lua?\n\n");
+        
+        printf("1) Tons de cinza/branco\n");
+        printf("2) Tons de preto\n");
+        printf("3) Tons de amarelo\n");
+        printf("4) Tons de azul\n");
+        
+        printf("Enter your answer:  ");
+        scanf("%d", &ans2);
+        
+        
+        if(ans2==1)
+        {
+            printf("Resposta correta\n");
+            point2 = 5;
+            printf("Você tem uma Score de %d pontos\n", point2);
+        }
+        
+        else
+        {
+            printf("Resposta errada\n");
+            point02 = 0;
+            printf("Você tem uma Score de %d pontos\n", point02);
+        }
+        /* Pergunta 03 */
+        printf("3) Qual a cor do mar?\n\n");
+        
+        printf("1) Tons de amarelo\n");
+        printf("2) Tons de preto\n");
+        printf("3) É Branco\n");
+        printf("4) Tons de azul\n");
+        
+        printf("Enter your answer:  ");
+        scanf("%d", &ans3);
+        
+        
+        if(ans3==4)
+        {
+            printf("Resposta correta\n");
+            point3 = 5;
+            printf("Você tem uma Score de %d pontos\n", point3);
+        }
+        
+        else
+        {
+            printf("Resposta errada\n");
+            point03 = 0;
+            printf("Você tem uma Score de %d pontos\n", point03);
+        }
+        /* Pergunta 04 */
+        
+        printf("4) Qual a cor do das pedras?\n\n");
+        
+        printf("1) Tons de amarelo\n");
+        printf("2) Tons de preto\n");
+        printf("3) Existem pedras de diveersas cores\n");
+        printf("4) Tons de azul\n");
+        
+        printf("Enter your answer:  ");
+        scanf("%d", &ans4);
+        
+        
+        if(ans4==3)
+        {
+            printf("Resposta correta\n");
+            point4 = 5;
+            printf("Você tem uma Score de %d pontos\n", point4);
+        }
+        
+        else
+        {
+            printf("Resposta errada\n");
+            point04 = 0;
+            printf("Você tem uma Score de %d pontos\n", point04);
+        }
+        
+    }
+}
